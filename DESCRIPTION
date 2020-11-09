@@ -1,0 +1,22 @@
+Package: taRdis
+Title: A package to normalize and analyze fluorescence intensity data over distance and time
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Emily",
+           family = "Mazur",
+           role = c("aut", "cre"),
+           email = "eem111@georgetown.edu",
+           comment = c(ORCID = "YOUR-ORCID-ID"))
+Description: The taRdis package is designed to clean, analyze, and plot data from collected in ImageJ from the "plot profile" function. This data should contain a series of distance markers with fluoresence intensity measurements corresponding to each distance marker for a series of timepoints. The function backtract subtracts a background fluorescence value from the full dataset. The function AverageJ uses the normalized data from backtract and computes the average fluorescence intenstiy value for each distance marker over the full timecourse. The function mid2 uses the averaged fluorescence intensity output from AverageJ and produces a pre-formatted scatterplot displaying Average Fluorescence Intensity vs Distance.
+License: `use_mit_license()`, `use_gpl3_license()` or friends to
+    pick a license
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1
+Suggests: 
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
+Depends: 
+    R (>= 2.10)
